@@ -1,0 +1,17 @@
+{
+  "name": "@r3-dev/brand",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "format": "prettier --write '**/*.{js,ts,tsx,json}'"
+  },
+  "devDependencies": {
+    "@crashmax/prettier-config": "3.2.1",
+    "typescript": "5.1.6",
+    "vite": "4.3.9"
+  }
+}
