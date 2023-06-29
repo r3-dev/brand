@@ -6,7 +6,7 @@ export class R3Badge extends HTMLElement {
   constructor() {
     super()
 
-    const href = this.getAttribute('href')
+    const href = this.getAttribute('href') ?? '#'
     if (!href) {
       logger.error('Missing href attribute')
     }
