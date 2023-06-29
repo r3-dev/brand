@@ -1,1 +1,1 @@
-export { R3Badge } from './badge.js'
+export * from './badge.js'
