@@ -1,8 +1,15 @@
+import { logger } from './logger.js'
+
 export class R3Badge extends HTMLElement {
   #shadowRoot: ShadowRoot
 
   constructor() {
     super()
+
+    const href = this.getAttribute('href')
+    if (!href) {
+      logger.error('Missing href attribute')
+    }
 
     this.#shadowRoot = this.attachShadow({ mode: 'open' })
     this.#shadowRoot.innerHTML = `
@@ -46,7 +53,7 @@ export class R3Badge extends HTMLElement {
           right: -2%;
         }
       </style>
-      <a href="https://example.com" target="_blank">
+      <a href="${href}" target="_blank">
         <span>Made by</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="40" fill="none">
           <path fill="#00A621" d="M0 13.695a8.889 8.889 0 0 1 5.323-8.142l9.11-3.99a8.89 8.89 0 0 1 7.133 0l9.111 3.99A8.889 8.889 0 0 1 36 13.695v11.824a8.889 8.889 0 0 1-5 7.993l-9.11 4.433a8.889 8.889 0 0 1-7.78 0L5 33.512a8.889 8.889 0 0 1-5-7.993V13.695Z"/>
@@ -56,7 +63,7 @@ export class R3Badge extends HTMLElement {
     `
   }
 
-  connectedCallback() {
+  connectedCallback(): void {
     const params = new URLSearchParams(location.search)
     const utmSource = params.get('utm_source')
     if (!utmSource || utmSource !== 'upwork') return
