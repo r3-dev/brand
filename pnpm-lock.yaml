@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  '@zero-dependency/utils':
+    specifier: ^1.6.0
+    version: 1.6.0
+
 devDependencies:
   '@crashmax/prettier-config':
     specifier: 3.2.1
@@ -491,6 +496,10 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
+
+  /@zero-dependency/utils@1.6.0:
+    resolution: {integrity: sha512-PdeZLuga00vCIUD0abZGuvMDxcPkvqKEdoboh01FK8DVR9lIYfqc5O3DYUcSwgtv2Pe6oQbxwoQSpefVulGqdw==}
+    dev: false
 
   /ansi-styles@3.2.1:
     resolution: {integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==}

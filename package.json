@@ -13,5 +13,8 @@
     "@crashmax/prettier-config": "3.2.1",
     "typescript": "5.1.6",
     "vite": "4.3.9"
+  },
+  "dependencies": {
+    "@zero-dependency/utils": "1.6.0"
   }
 }

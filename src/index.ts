@@ -1,1 +1,1 @@
-console.log('@r3-dev/brand')
+export { R3Badge } from './badge.js'
