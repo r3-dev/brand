@@ -13,7 +13,7 @@ yarn install @r3-dev/brand
 ## Usage
 
 ```tsx
-import '@r3dev/brand'
+import '@r3-dev/brand'
 
 declare global {
   namespace JSX {
