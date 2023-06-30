@@ -7,27 +7,37 @@
   <title>@r3-dev/brand</title>
   <style>
     body {
-      background-color: #fff;
-      color: #000;
+      font-family: monospace;
+      height: 1000vh;
     }
 
-    @media (prefers-color-scheme: light) {
+    @media (prefers-color-scheme: dark) {
       body {
         background-color: #000;
         color: #fff;
       }
     }
 
+    @media (prefers-color-scheme: light) {
+      body {
+        background-color: #fff;
+        color: #000;
+      }
+    }
+
     a {
       color: #00A621;
+      font-weight: 600;
     }
   </style>
 </head>
 
 <body>
-  <a href="/">close</a>
   <a href="/?utm_source=upwork">upwork</a>
+  <a href="/">home</a>
   <r3-badge href="https://example.com" style="position: absolute; top: 1rem; right: 1rem;"></r3-badge>
+  <r3-badge href="https://example.com" style="position: fixed; bottom: 1rem; right: 1rem;"></r3-badge>
+  <r3-badge href="https://example.com" style="position: fixed; bottom: 1rem; left: 1rem;"></r3-badge>
   <script type="module" src="./src/index.ts"></script>
 </body>
 
