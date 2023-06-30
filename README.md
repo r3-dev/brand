@@ -51,15 +51,17 @@ r3-badge {
   --bg-badge: darkblue;
 }
 
+/* dark mode */
 @media (prefers-color-scheme: dark) {
-  :host {
+  r3-badge {
     --bg-badge: #fff;
     --text-badge: #000;
   }
 }
 
+/* light mode */
 @media (prefers-color-scheme: light) {
-  :host {
+  r3-badge {
     --bg-badge: #000;
     --text-badge: #fff;
   }
