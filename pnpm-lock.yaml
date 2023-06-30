@@ -4,11 +4,6 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  '@zero-dependency/utils':
-    specifier: 1.6.0
-    version: 1.6.0
-
 devDependencies:
   '@crashmax/prettier-config':
     specifier: 3.2.1
@@ -670,10 +665,6 @@ packages:
     transitivePeerDependencies:
       - typescript
     dev: true
-
-  /@zero-dependency/utils@1.6.0:
-    resolution: {integrity: sha512-PdeZLuga00vCIUD0abZGuvMDxcPkvqKEdoboh01FK8DVR9lIYfqc5O3DYUcSwgtv2Pe6oQbxwoQSpefVulGqdw==}
-    dev: false
 
   /ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}
