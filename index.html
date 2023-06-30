@@ -5,10 +5,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>@r3-dev/brand</title>
+  <style>
+    body {
+      background-color: #fff;
+      color: #000;
+    }
+
+    @media (prefers-color-scheme: light) {
+      body {
+        background-color: #000;
+        color: #fff;
+      }
+    }
+
+    a {
+      color: #00A621;
+    }
+  </style>
 </head>
 
 <body>
-  <r3-badge style="position: absolute; top: 1rem; right: 1rem;"></r3-badge>
+  <a href="/">close</a>
+  <a href="/?utm_source=upwork">upwork</a>
+  <r3-badge href="https://example.com" style="position: absolute; top: 1rem; right: 1rem;"></r3-badge>
   <script type="module" src="./src/index.ts"></script>
 </body>
 

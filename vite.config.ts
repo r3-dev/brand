@@ -7,7 +7,7 @@ export default defineConfig({
     target: 'esnext',
     lib: {
       entry: 'src/index.ts',
-      name: 'fireworks-js',
+      name: 'badge',
       formats: [
         'es',
         'cjs',

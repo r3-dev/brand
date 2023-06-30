@@ -1,3 +1,3 @@
-import { R3Badge } from './badge.js'
+import { Badge } from './badge.js'
 
-export default R3Badge
+export default Badge
