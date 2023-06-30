@@ -6,7 +6,15 @@
 ## Install
 
 ```
-yarn install @r3-dev/brand
+npm install @r3-dev/brand
+```
+
+```
+yarn add @r3-dev/brand
+```
+
+```
+pnpm add @r3-dev/brand
 ```
 
 ## Usage
