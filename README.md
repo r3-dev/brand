@@ -7,7 +7,7 @@
 ## Install
 
 ```
-yarn install @r3dev/brand
+yarn install @r3-dev/brand
 ```
 
 ## Usage
