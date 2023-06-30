@@ -3,7 +3,6 @@
 ![Npm Version](https://img.shields.io/npm/v/@r3-dev/brand)
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/crashmax-dev/r3dev-brand/npm-publish.yaml)
 
-
 ## Install
 
 ```
@@ -11,6 +10,8 @@ yarn install @r3-dev/brand
 ```
 
 ## Usage
+
+[![Edit @r3-dev/brand](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/r3-dev-brand-z6f766?fontsize=14&hidenavigation=1&theme=dark)
 
 ```tsx
 import '@r3-dev/brand'
@@ -30,7 +31,7 @@ export function App() {
   return (
     <r3-badge
       href="https://example.com"
-      style={{ position: 'absolute', top: '1rem', right: '1rem' }}
+      style={{ position: 'fixed', top: '1rem', right: '1rem' }}
     />
   )
 }
@@ -50,10 +51,18 @@ r3-badge {
   --bg-badge: darkblue;
 }
 
-@media (prefers-color-scheme: light) {
-  r3-badge {
+@media (prefers-color-scheme: dark) {
+  :host {
     --bg-badge: #fff;
     --text-badge: #000;
   }
 }
+
+@media (prefers-color-scheme: light) {
+  :host {
+    --bg-badge: #000;
+    --text-badge: #fff;
+  }
+}
+
 ```
