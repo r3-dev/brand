@@ -13,13 +13,25 @@ export class Badge extends HTMLElement {
   }
 
   connectedCallback(): void {
-    const params = new URLSearchParams(location.search)
-    const utmSource = params.get('utm_source')
-    if (!utmSource || utmSource !== 'upwork') return
+    if (!this.isShowBadge()) return
 
     const link = this.shadowRoot!.querySelector('a')!
     link.href = this.getAttribute('href') ?? '#'
     link.classList.add('visible')
+  }
+
+  private isShowBadge(): boolean {
+    const params = new URLSearchParams(location.search)
+
+    const keyAttribute = this.getAttribute('key') ?? 'utm_source'
+    const valueAttribute = this.getAttribute('value') ?? 'upwork'
+
+    const key = params.get(keyAttribute)
+    if (!key || !valueAttribute) {
+      return false
+    }
+
+    return key === valueAttribute
   }
 }
 

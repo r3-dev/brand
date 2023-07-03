@@ -33,11 +33,18 @@
 </head>
 
 <body>
-  <a href="/?utm_source=upwork">upwork</a>
   <a href="/">home</a>
+  <a href="/?utm_source=upwork">default</a>
+  <a href="/?debug=true">debug</a>
+
   <r3-badge href="https://example.com" style="position: absolute; top: 1rem; right: 1rem;"></r3-badge>
-  <r3-badge href="https://example.com" style="position: fixed; bottom: 1rem; right: 1rem;"></r3-badge>
-  <r3-badge href="https://example.com" style="position: fixed; bottom: 1rem; left: 1rem;"></r3-badge>
+
+  <r3-badge key="debug" value="true" href="https://example.com"
+    style="position: fixed; bottom: 1rem; right: 1rem;"></r3-badge>
+
+  <r3-badge key="debug" value="true" href="https://example.com"
+    style="position: fixed; bottom: 1rem; left: 1rem;"></r3-badge>
+
   <script type="module" src="./src/index.ts"></script>
 </body>
 
