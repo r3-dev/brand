@@ -1,7 +1,21 @@
 # R3Dev Brand
 
-![Npm Version](https://img.shields.io/npm/v/@r3-dev/brand)
-![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/crashmax-dev/r3dev-brand/npm-publish.yaml)
+<p align="center">
+  <a href="https://www.upwork.com/o/companies/~01e5f1563365e3c1b5/">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./public/badge-light.svg">
+      <img src="./public/badge-dark.svg" />
+    </picture>
+  </a>
+
+  <a href="https://www.npmjs.com/package/@r3-dev/brand">
+    <img alt="npm" src="https://img.shields.io/npm/v/@r3-dev/brand">
+  </a>
+
+  <a href="https://github.com/r3-dev/brand/actions">
+    <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/r3-dev/brand/gh-pages.yaml?branch=master">
+  </a>
+</p>
 
 ## Install
 
