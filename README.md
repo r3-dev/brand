@@ -59,6 +59,20 @@ export function App() {
 }
 ```
 
+## Markdown
+
+![Dark Badge](https://r3-dev.github.io/brand/badge-dark.svg)
+![Light Badge](https://r3-dev.github.io/brand/badge-light.svg)
+
+```markdown
+<a href="https://www.upwork.com/o/companies/~01e5f1563365e3c1b5/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://r3-dev.github.io/brand/badge-light.svg">
+    <img src="https://r3-dev.github.io/brand/badge-dark.svg" />
+  </picture>
+</a>
+```
+
 ## Overriding styles
 
 ```css
