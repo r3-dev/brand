@@ -1,0 +1,11 @@
+{
+  "name": "@r3-dev/brand-website",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@r3-dev/brand": "workspace:^"
+  }
+}

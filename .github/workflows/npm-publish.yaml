@@ -39,4 +39,4 @@ jobs:
         shell: bash
         run: |
           echo "//registry.npmjs.org/:_authToken="${{ secrets.NPM_TOKEN }}"" > ~/.npmrc
-          pnpm publish --access public
+          pnpm -r --filter='./packages/*' publish --access public
