@@ -1,6 +1,6 @@
 # R3Dev Brand
 
-<p align="center">
+<p align="left">
   <a href="https://www.upwork.com/o/companies/~01e5f1563365e3c1b5/">
     <picture>
       <source media="(prefers-color-scheme: dark)" srcset="./public/badge-light.svg">
