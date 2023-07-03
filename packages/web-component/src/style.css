@@ -1,6 +1,4 @@
 :host {
-  --bg-logo: #00a621;
-  --text-logo: #fff;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -10,13 +8,6 @@ a:not(.visible) {
 
 :host(:hover) {
   transform: scale(1.1);
-}
-
-@media (prefers-color-scheme: dark) {
-  :host {
-    --bg-badge: #fff;
-    --text-badge: #000;
-  }
 }
 
 @media (prefers-color-scheme: light) {
