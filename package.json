@@ -1,28 +1,19 @@
 {
-  "name": "@r3-dev/brand",
-  "version": "1.2.0",
+  "name": "@r3-dev/brand-workspace",
   "type": "module",
-  "types": "./dist/index.d.ts",
-  "main": "./dist/index.cjs.js",
-  "module": "./dist/index.es.js",
-  "exports": {
-    "require": "./dist/index.cjs.js",
-    "import": "./dist/index.es.js"
-  },
-  "files": [
-    "dist"
-  ],
+  "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "build:website": "vite build --config vite.config.website.js",
-    "preview": "vite preview",
+    "dev": "turbo dev --filter=./packages/*",
+    "build": "turbo build --filter=./packages/*",
+    "build:website": "turbo build --filter=./website",
     "format": "prettier --write '**/*.{js,ts,tsx,json}'"
   },
   "devDependencies": {
     "@crashmax/prettier-config": "3.2.1",
+    "@crashmax/tsconfig": "^2.0.1",
+    "turbo": "1.10.7",
     "typescript": "5.1.6",
     "vite": "4.3.9",
-    "vite-plugin-dts": "3.0.0-beta.3"
+    "vite-plugin-dts": "3.0.3"
   }
 }
