@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [dts({ insertTypesEntry: true })],
   build: {
     target: 'esnext',
+    minify: 'terser',
     lib: {
       entry: 'src/index.ts',
       name: 'badge',
