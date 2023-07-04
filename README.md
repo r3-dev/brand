@@ -8,8 +8,8 @@
     </picture>
   </a>
 
-  <a href="https://www.npmjs.com/package/@r3-dev/brand">
-    <img alt="npm" src="https://img.shields.io/npm/v/@r3-dev/brand">
+  <a href="https://www.npmjs.com/package/@r3-dev/badge">
+    <img alt="npm" src="https://img.shields.io/npm/v/@r3-dev/badge">
   </a>
 
   <a href="https://github.com/r3-dev/brand/actions">
