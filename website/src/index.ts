@@ -1,2 +1,2 @@
-import '@r3-dev/brand'
+import '@r3-dev/badge'
 import './style.css'
