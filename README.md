@@ -20,23 +20,23 @@
 ## Install
 
 ```
-npm install @r3-dev/brand
+npm install @r3-dev/badge
 ```
 
 ```
-yarn add @r3-dev/brand
+yarn add @r3-dev/badge
 ```
 
 ```
-pnpm add @r3-dev/brand
+pnpm add @r3-dev/badge
 ```
 
 ## Usage
 
-[![Edit @r3-dev/brand](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/r3-dev-brand-z6f766?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit @r3-dev/badge](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/r3-dev-brand-z6f766?fontsize=14&hidenavigation=1&theme=dark)
 
 ```tsx
-import '@r3-dev/brand'
+import '@r3-dev/badge'
 
 declare global {
   namespace JSX {
@@ -102,5 +102,4 @@ r3-badge {
     --text-badge: #fff;
   }
 }
-
 ```

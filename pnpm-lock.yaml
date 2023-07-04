@@ -27,13 +27,13 @@ importers:
         specifier: 3.0.3
         version: 3.0.3(typescript@5.1.6)
 
-  packages/web-component: {}
+  packages/badge: {}
 
   website:
     dependencies:
-      '@r3-dev/brand':
+      '@r3-dev/badge':
         specifier: workspace:^
-        version: link:../packages/web-component
+        version: link:../packages/badge
 
 packages:
 
