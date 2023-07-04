@@ -33,7 +33,7 @@ pnpm add @r3-dev/badge
 
 ## Usage in React/Next.js
 
-[![Edit @r3-dev/badge](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/r3-dev-brand-z6f766?fontsize=14&hidenavigation=1&theme=dark)
+[![Edit @r3-dev/badge](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/r3-dev-badge-z6f766?fontsize=14&hidenavigation=1&theme=dark)
 
 ```tsx
 // components/badge.tsx
