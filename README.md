@@ -1,4 +1,4 @@
-# R3dev brand
+# R3 dev brand
 
 <p align="left">
   <a href="https://www.upwork.com/o/companies/~01e5f1563365e3c1b5/">
@@ -17,7 +17,7 @@
   </a>
 </p>
 
-## Install
+## Installation
 
 ```
 npm install @r3-dev/badge
@@ -31,11 +31,12 @@ yarn add @r3-dev/badge
 pnpm add @r3-dev/badge
 ```
 
-## Usage
+## Usage in React/Next.js
 
 [![Edit @r3-dev/badge](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/r3-dev-brand-z6f766?fontsize=14&hidenavigation=1&theme=dark)
 
 ```tsx
+// components/badge.tsx
 import '@r3-dev/badge'
 
 declare global {
@@ -44,33 +45,58 @@ declare global {
       'r3-badge': React.DetailedHTMLProps<
         React.AnchorHTMLAttributes<HTMLAnchorElement>,
         HTMLAnchorElement
-      >;
+      >
     }
   }
 }
 
-export function App() {
+export default function Badge() {
   return (
     <r3-badge
-      href="https://example.com"
+      href="https://www.upwork.com/agencies/~01e5f1563365e3c1b5/"
       style={{ position: 'fixed', top: '1rem', right: '1rem' }}
     />
   )
 }
+
+// _app.tsx
+import dynamic from 'next/dynamic'
+import type { AppProps } from 'next/app'
+
+const Badge = dynamic(() => import('../components/badge'), {
+  ssr: false
+})
+
+export default function App({
+  Component,
+  pageProps: { ...pageProps }
+}: AppProps) {
+  return (
+    <>
+      <Badge />
+      <Component {...pageProps} />
+    </>
+  )
+}
 ```
 
-## Markdown
+# CDN
 
-![Dark Badge](https://r3-dev.github.io/brand/badge-dark.svg)
-![Light Badge](https://r3-dev.github.io/brand/badge-light.svg)
-
-```markdown
-<a href="https://www.upwork.com/o/companies/~01e5f1563365e3c1b5/">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://r3-dev.github.io/brand/badge-light.svg">
-    <img src="https://r3-dev.github.io/brand/badge-dark.svg" />
-  </picture>
-</a>
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- import badge from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@r3-dev/badge"></script>
+  </head>
+  <body>
+    <!-- render badge -->
+    <r3-badge
+      href="https://www.upwork.com/agencies/~01e5f1563365e3c1b5/"
+      style="position: fixed; top: 1rem; right: 1rem;"
+    />
+  </body>
+</html>
 ```
 
 ## Overriding styles
@@ -85,6 +111,12 @@ r3-badge {
 
   /* override */
   --bg-badge: darkblue;
+
+  /* light shadow */
+  filter: drop-shadow(0px 0px 4px rgba(255, 255, 255, 0.5));
+
+  /* dark shadow */
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
 }
 
 /* dark mode */
@@ -102,4 +134,18 @@ r3-badge {
     --text-badge: #fff;
   }
 }
+```
+
+## Markdown
+
+![Dark Badge](https://r3-dev.github.io/brand/badge-dark.svg)
+![Light Badge](https://r3-dev.github.io/brand/badge-light.svg)
+
+```markdown
+<a href="https://www.upwork.com/o/companies/~01e5f1563365e3c1b5/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://r3-dev.github.io/brand/badge-light.svg">
+    <img src="https://r3-dev.github.io/brand/badge-dark.svg" />
+  </picture>
+</a>
 ```
