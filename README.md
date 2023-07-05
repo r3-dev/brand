@@ -94,7 +94,7 @@ export default function App({
     <r3-badge
       href="https://www.upwork.com/agencies/~01e5f1563365e3c1b5/"
       style="position: fixed; top: 1rem; right: 1rem;"
-    />
+    ></r3-badge>
   </body>
 </html>
 ```
